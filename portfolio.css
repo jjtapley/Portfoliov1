@@ -13,8 +13,6 @@ nav div {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	flex-shrink: 6;
-	
 }
 
 span {
@@ -34,7 +32,6 @@ span:hover {
 nav {
 	position: fixed;
 	top: 0;
-	float: right;
 	background-color: #ffffff;
 	width: 100%;
 }
@@ -44,7 +41,7 @@ nav a {
 	text-decoration: none;
 	font-size: 150%;
 	background-color: #3d97c2;
-	padding: 10px;
+	padding: 5%;
 	border-radius: 8px;
 	transition: padding 1s ease;
 	
@@ -60,17 +57,17 @@ nav a, h1, footer{
 
 /* Change link background cover when hovered over*/
 .aboutMeLink:hover {
-	padding: 30px;
+	padding: 5%;
 	background-color: #c37fd2;
 }
 
 .portfolioLink:hover {
-	padding: 30px;
+	padding: 5%;
 	background-color: #C2683D;
 }
 
 .contactLink:hover {
-	padding: 30px;
+	padding: 5%;
 	background-color: #55C23D;
 }
 /* About Me section*/
@@ -82,7 +79,7 @@ header img {
 }
 
 header h1 {
-	padding-top: 20%;
+	padding-top: 10%;
 }
 
 header div, header img {
@@ -93,7 +90,7 @@ header div, header img {
 
 
 header p {
-	margin: 5% 30%;
+	margin: 5% 20%;
 	text-align: center;
 }
 
@@ -142,6 +139,7 @@ summary, footer {
 
 footer {
 	background-color: #55C23D;
+	padding-bottom: 20%;
 	
 }
 /* Aligning and styling links and contact section*/
@@ -184,15 +182,23 @@ footer {
 
 /*Make responsive */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1300px) {
 	span, nav a {
 		font-size: 1em;
-		margin: 0;
 		padding: 5px;
 	}
+}
+
+@media screen and (max-width: 1000px) {
+	nav a {
+		margin:2%;
+	}
+	.aboutMeLink:hover, .portfolioLink:hover, .contactLink:hover {
+		padding: 2%;
+	}
+}
 	
-	
-	
+
 @media screen and (max-width: 800px) {
 	nav a, span {
 		font-size: 1em;
@@ -204,6 +210,16 @@ footer {
 
 }
 
+@media screen and (max-width: 700px) {
+	nav a, span {
+		font-size: 0.7em;
+	}
+	
+	.aboutMeLink:hover, .portfolioLink:hover, .contactLink:hover {
+		padding: 2%;
+	}
+
+}
 /* color scheme:
 
 blue: #3d97c2
