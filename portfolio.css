@@ -155,13 +155,6 @@ footer {
 	padding-top: 20%;
 }
 
-.iconDisclaimer {
-	margin: 5%;
-	background-color: #3d97c2;
-	width: 100%;
-	margin: 0;
-	text-align: center;
-}
 
 /* Make portfolio links transition on hover*/
 
@@ -194,7 +187,8 @@ footer {
 @media screen and (max-width: 1000px) {
 	span, nav a {
 		font-size: 1em;
-
+		margin: 0;
+		padding: 5px;
 	}
 	
 	
@@ -202,7 +196,6 @@ footer {
 @media screen and (max-width: 800px) {
 	nav a, span {
 		font-size: 1em;
-
 	}
 	nav div {
 		height: 60px;
