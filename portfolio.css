@@ -5,6 +5,7 @@
 body {
 	font-family: 'Kumbh Sans', sans-serif;
 	color: #ffffff;
+	font-size: 1.5em;
 }
 
 /* Styling for Nav Bar - flexbox and fixed positioning*/
@@ -12,6 +13,7 @@ nav div {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	flex-shrink: 6;
 	
 }
 
@@ -23,6 +25,7 @@ span {
 	transition: all 1s ease;
 }
 
+/* Add style change when hovering over name*/
 span:hover {
 	color: #C2683D;
 	font-size: 2em;
@@ -88,6 +91,12 @@ header div, header img {
 	width: 100;
 }
 
+
+header p {
+	margin: 5% 30%;
+	text-align: center;
+}
+
 /* Centering all text content*/
 header div, summary, footer {
 	align-content: center;
@@ -107,6 +116,10 @@ header {
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	align-content: center;
+}
+
+main {
+	padding-bottom: 10%;
 }
 
 main img {
@@ -177,15 +190,25 @@ footer {
 }
 
 /*Make responsive */
+
+@media screen and (max-width: 1000px) {
+	span, nav a {
+		font-size: 1em;
+
+	}
+	
+	
+	
 @media screen and (max-width: 800px) {
-	nav a {
-		font-size: 110%;
+	nav a, span {
+		font-size: 1em;
 
 	}
 	nav div {
 		height: 60px;
 		justify-content: space-around;
 	}
+
 }
 
 /* color scheme:
