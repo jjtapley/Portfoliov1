@@ -1,0 +1,52 @@
+* {
+	box-sizing: border-box;
+}
+
+nav {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 100px;
+}
+
+nav a {
+	margin: 30px;
+	text-decoration: none;
+	font-family: 'Kumbh Sans', sans-serif;
+	color: #ffffff;
+	font-size: 150%;
+	text-transform: uppercase;
+	background-color: #3d97c2;
+	padding: 10px;
+	border-radius: 8px;
+	transition: ;
+	
+}
+
+.aboutMeLink:hover {
+	padding: 30px;
+	background-color: #AA3DC2;
+}
+
+.portfolioLink:hover {
+	padding: 30px;
+	background-color: #C2683D;
+}
+
+.contactLink:hover {
+	padding: 30px;
+	background-color: #55C23D;
+}
+
+
+
+
+
+/* color scheme:
+
+blue: #3d97c2
+purple: #AA3DC2
+orange: #C2683D
+green: #55C23D
+
+*/
