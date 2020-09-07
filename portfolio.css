@@ -21,7 +21,7 @@ nav {
 	width: 100%;
 }
 
-nav a, h1 {
+nav a, h1, footer{
 	text-transform: uppercase;
 	font-weight: bold;
 }
@@ -113,10 +113,21 @@ footer {
 
 .linksGallery {
 	display: flex;
-	flex-display: wrap;
-	
+	flex-shrink: 3;
 }
 
+.linksGallery img {
+	width: 40%;
+	padding-top: 20%;
+}
+
+.iconDisclaimer {
+	margin: 5%;
+	background-color: #3d97c2;
+	width: 100%;
+	margin: 0;
+	text-align: center;
+}
 
 /* color scheme:
 
