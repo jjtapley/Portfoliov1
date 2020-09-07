@@ -5,7 +5,7 @@
 body {
 	font-family: 'Kumbh Sans', sans-serif;
 	color: #ffffff;
-	font-size: 1.5em;
+	font-size: 1.3em;
 }
 
 /* Styling for Nav Bar - flexbox and fixed positioning*/
@@ -41,7 +41,7 @@ nav a {
 	text-decoration: none;
 	font-size: 150%;
 	background-color: #3d97c2;
-	padding: 5%;
+	padding: 10px;
 	border-radius: 8px;
 	transition: padding 1s ease;
 	
@@ -57,17 +57,17 @@ nav a, h1, footer{
 
 /* Change link background cover when hovered over*/
 .aboutMeLink:hover {
-	padding: 5%;
+	padding: 2%;
 	background-color: #c37fd2;
 }
 
 .portfolioLink:hover {
-	padding: 5%;
+	padding: 2%;
 	background-color: #C2683D;
 }
 
 .contactLink:hover {
-	padding: 5%;
+	padding: 2%;
 	background-color: #55C23D;
 }
 /* About Me section*/
@@ -79,7 +79,7 @@ header img {
 }
 
 header h1 {
-	padding-top: 10%;
+	padding-top: 20%;
 }
 
 header div, header img {
@@ -194,7 +194,15 @@ footer {
 		margin:2%;
 	}
 	.aboutMeLink:hover, .portfolioLink:hover, .contactLink:hover {
-		padding: 2%;
+		padding: 1%;
+	}
+	
+	span:hover {
+		font-size: 1.5em;	
+	}
+	
+	.aboutMeLink {
+		
 	}
 }
 	
@@ -202,6 +210,9 @@ footer {
 @media screen and (max-width: 800px) {
 	nav a, span {
 		font-size: 1em;
+	}
+	span:hover {
+		font-size: 1em;	
 	}
 	nav div {
 		height: 60px;
