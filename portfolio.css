@@ -2,26 +2,28 @@
 	box-sizing: border-box;
 }
 
+/* Setting general text styling for whole page*/
 body {
 	font-family: 'Kumbh Sans', sans-serif;
 	color: #ffffff;
 	font-size: 1.3em;
 }
 
-/* Styling for Nav Bar - flexbox and fixed positioning*/
+/* NAV BAR Styling - flexbox positioning*/
 nav div {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 }
 
+/* Name div in nav bar styling and transition*/
 span {
 	color: #000000;
 	font-family: 'Rubik Mono One', sans-serif;
 	transition: all 1s ease;
 }
 
-/* Add style change when hovering over name*/
+/* Add colour change when hovering over name*/
 span:hover {
 	color: #C2683D;
 }
@@ -34,11 +36,11 @@ nav {
 	background-color: #ffffff;
 }
 
-/*Grouping multiple matching commands together*/
+/*Grouping multiple matching commands together - larger font size for nav bar*/
 nav a, span:hover {
 	font-size: 1.5em;
 }
-
+/*Styling for Nav bar links*/
 nav a {
 	margin: 30px;
 	text-decoration: none;
@@ -48,16 +50,17 @@ nav a {
 	transition: padding 1s ease;
 }
 
-/* All Headers caps and bold */
+/* All Headers caps */
 nav a, h1, footer span {
 	text-transform: uppercase;
 }
 
-/* Change link background cover when hovered over*/
+/* Change link background size when hovered over*/
 .aboutMeLink:hover, .portfolioLink:hover, .contactLink:hover {
 	padding: 2%;
 }
 
+/* Change link background colours when hovered over*/
 .aboutMeLink:hover {
 	background-color: #c37fd2;
 }
@@ -65,19 +68,18 @@ nav a, h1, footer span {
 .contactLink:hover, footer {
 	background-color: #55C23D;
 }
-/* About Me section - flower pic sizing*/
+/* ABOUT ME HEADER section - flower pic sizing*/
 header img {
 	height: 30%;
 	width: 30%;
 	border-radius: 50%;
 }
-
+/* creating more space around divs to help with positioning*/
 header h1 {
 	padding-top: 20%;
 }
 
 header div, header img {
-	display: block;
 	margin: 5% auto;
 }
 
@@ -85,6 +87,17 @@ header p, footer p, main p {
 	margin: 5% 10%;
 }
 
+main, summary, header {
+	padding-bottom: 10%;
+}
+
+footer {
+	padding-bottom: 20%;
+}
+
+summary, footer, .linksGallery img {
+	padding-top: 20%;
+}
 /* Centering all text content*/
 header div, summary, footer, header p, .gallery {
 	align-content: center;
@@ -92,40 +105,31 @@ header div, summary, footer, header p, .gallery {
 	
 }
 
-/* Styling About Me block - making larger to cover screen space*/
+/* Styling About Me section - making larger to cover screen space*/
 header {
 	background-color: #c37fd2;
 	padding-top: 10%;
 }
-/* Creating grid for portfolio images to sit inside*/
+
+/* PORTFOLIO MAIN SECTION - Creating grid for portfolio images to sit inside*/
 .gallery {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
 }
 
-main, summary, header {
-	padding-bottom: 10%;
-}
-
+/* Project images styling*/
 main img {
 	width: 100%;
 	height: 100%;
 	border-radius: 10%;
 	padding: 5px 5px;
+	display: flex;
 }
 
-/* Styling Portfolio section and tidying similar commands together*/
+/* Styling 'Orange' background items - bunching together*/
 summary, main, .portfolioLink:hover {
 	background-color: #C2683D;
-}
-
-footer {
-	padding-bottom: 20%;
-}
-/* Aligning and styling links and contact section*/
-.linksGallery {
-	display: flex;
 }
 
 /*Adding icon image styling and hover action*/
@@ -138,13 +142,7 @@ footer img:hover {
 	width: 60%;
 }
 
-summary, footer, .linksGallery img {
-	padding-top: 20%;
-}
-
-
 /* Make portfolio links transition on hover*/
-
 .project1 img:hover, .project6 img:hover {
 	border: 8px solid #3d97c2;
 
@@ -220,7 +218,6 @@ main img:hover {
 	nav a, span {
 		font-size: 0.7em;
 	}
-	
 	.aboutMeLink:hover, .portfolioLink:hover, .contactLink:hover {
 		padding: 2%;
 	}
