@@ -199,7 +199,7 @@ main img:hover {
 		flex-direction: column;
 	}
 	summary, footer, .linksGallery img {
-			padding-top: 30%;
+			padding-top: 35%;
 		}
 	header img {
 		display: none;
