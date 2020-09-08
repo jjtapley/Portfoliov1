@@ -147,14 +147,21 @@ summary, footer, .linksGallery img {
 
 .project1 img:hover, .project6 img:hover {
 	border: 8px solid #3d97c2;
+
 }
 
 .project2 img:hover, .project4 img:hover  {
 	border: 8px solid #c37fd2;
+
 }
 
 .project3 img:hover, .project5 img:hover {
 	border: 8px solid #55C23D;
+
+}
+
+main img:hover {
+	opacity: 0.5;
 }
 
 /*Make responsive */
@@ -191,7 +198,6 @@ summary, footer, .linksGallery img {
 	nav div {
 		flex-direction: column;
 	}
-	
 	summary, footer, .linksGallery img {
 			padding-top: 30%;
 		}
