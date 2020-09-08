@@ -183,16 +183,30 @@ summary, footer, .linksGallery img {
 
 @media screen and (max-width: 800px) {	
 	nav a, span {
-		font-size: 1em;
+		margin-top: 2px;
+		
 	}
 	span:hover {
 		font-size: 1em;	
 	}
 	nav div {
-		height: 60px;
-		justify-content: space-around;
+		flex-direction: column;
 	}
-
+	summary, footer, .linksGallery img {
+		padding-top: 30%;
+	}
+	header img {
+		display: none;
+	}
+	
+	header div {
+		padding-top: 10%;
+		
+	}
+	.aboutMeImage {
+		background-image:url("aboutme.jpg");
+		padding-top: 50%;
+	}
 }
 
 @media screen and (max-width: 700px) {
@@ -202,6 +216,10 @@ summary, footer, .linksGallery img {
 	
 	.aboutMeLink:hover, .portfolioLink:hover, .contactLink:hover {
 		padding: 2%;
+	}
+	
+	span:hover {
+		font-size: 0.7em;	
 	}
 
 }
