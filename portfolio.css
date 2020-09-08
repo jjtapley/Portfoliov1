@@ -54,7 +54,6 @@ nav a, h1, footer span {
 }
 
 /* Change link background cover when hovered over*/
-<<<<<<< HEAD
 .aboutMeLink:hover, .portfolioLink:hover, .contactLink:hover {
 	padding: 2%;
 }
@@ -64,20 +63,6 @@ nav a, h1, footer span {
 }
 
 .contactLink:hover, footer {
-=======
-.aboutMeLink:hover {
-	padding: 2%;
-	background-color: #c37fd2;
-}
-
-.portfolioLink:hover {
-	padding: 2%;
-	background-color: #C2683D;
-}
-
-.contactLink:hover {
-	padding: 2%;
->>>>>>> 7a5664f4c7f15867cb355c4fc8666ee6144832bf
 	background-color: #55C23D;
 }
 /* About Me section - flower pic sizing*/
@@ -192,13 +177,6 @@ summary, footer, .linksGallery img {
 	
 	span:hover {
 		font-size: 1.5em;	
-<<<<<<< HEAD
-=======
-	}
-	
-	.aboutMeLink {
-		
->>>>>>> 7a5664f4c7f15867cb355c4fc8666ee6144832bf
 	}
 	
 }
@@ -206,18 +184,13 @@ summary, footer, .linksGallery img {
 @media screen and (max-width: 800px) {	
 	nav a, span {
 		font-size: 1em;
-		margin-right: 2%;
-	}
-	span:hover {
-		font-size: 1em;	
 	}
 	span:hover {
 		font-size: 1em;	
 	}
 	nav div {
 		height: 60px;
-		display: block;
-		font-size: 0.8em;
+		justify-content: space-around;
 	}
 
 }
