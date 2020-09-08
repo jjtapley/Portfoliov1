@@ -1,13 +1,5 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 * {
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
@@ -18,21 +10,14 @@ body {
 
 /* Styling for Nav Bar - flexbox and fixed positioning*/
 nav div {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-pack: distribute;
-	    justify-content: space-around;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	justify-content: space-around;
+	align-items: center;
 }
 
 span {
 	color: #000000;
 	font-family: 'Rubik Mono One', sans-serif;
-	-webkit-transition: all 1s ease;
-	-o-transition: all 1s ease;
 	transition: all 1s ease;
 }
 
@@ -60,8 +45,6 @@ nav a {
 	background-color: #3d97c2;
 	padding: 10px;
 	border-radius: 8px;
-	-webkit-transition: padding 1s ease;
-	-o-transition: padding 1s ease;
 	transition: padding 1s ease;
 }
 
@@ -104,8 +87,7 @@ header p, footer p, main p {
 
 /* Centering all text content*/
 header div, summary, footer, header p, .gallery {
-	-ms-flex-line-pack: center;
-	    align-content: center;
+	align-content: center;
 	text-align: center;
 	
 }
@@ -117,36 +99,9 @@ header {
 }
 /* Creating grid for portfolio images to sit inside*/
 .gallery {
-	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: 1fr 1fr 1fr;
 	grid-template-columns: 1fr 1fr 1fr;
-	-ms-grid-rows: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
-}
-.gallery > *:nth-child(1) {
-	-ms-grid-row: 1;
-	-ms-grid-column: 1;
-}
-.gallery > *:nth-child(2) {
-	-ms-grid-row: 1;
-	-ms-grid-column: 2;
-}
-.gallery > *:nth-child(3) {
-	-ms-grid-row: 1;
-	-ms-grid-column: 3;
-}
-.gallery > *:nth-child(4) {
-	-ms-grid-row: 2;
-	-ms-grid-column: 1;
-}
-.gallery > *:nth-child(5) {
-	-ms-grid-row: 2;
-	-ms-grid-column: 2;
-}
-.gallery > *:nth-child(6) {
-	-ms-grid-row: 2;
-	-ms-grid-column: 3;
 }
 
 main, summary, header {
@@ -170,16 +125,12 @@ footer {
 }
 /* Aligning and styling links and contact section*/
 .linksGallery {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 }
 
 /*Adding icon image styling and hover action*/
 footer img {
 	width: 50%;
-	-webkit-transition: width 1s ease;
-	-o-transition: width 1s ease;
 	transition: width 1s ease;
 }
 
@@ -233,20 +184,17 @@ summary, footer, .linksGallery img {
 @media screen and (max-width: 800px) {	
 	nav a, span {
 		margin-top: 2px;
-		
 	}
 	span:hover {
 		font-size: 1em;	
 	}
 	nav div {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
+		flex-direction: column;
 	}
+	
 	summary, footer, .linksGallery img {
-		padding-top: 30%;
-	}
+			padding-top: 30%;
+		}
 	header img {
 		display: none;
 	}
@@ -259,6 +207,7 @@ summary, footer, .linksGallery img {
 		background-image:url("aboutme.jpg");
 		padding-top: 50%;
 	}
+
 }
 
 @media screen and (max-width: 700px) {
@@ -268,10 +217,6 @@ summary, footer, .linksGallery img {
 	
 	.aboutMeLink:hover, .portfolioLink:hover, .contactLink:hover {
 		padding: 2%;
-	}
-	
-	span:hover {
-		font-size: 0.7em;	
 	}
 
 }
