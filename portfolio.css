@@ -40,6 +40,7 @@ nav {
 nav a, span:hover {
 	font-size: 1.5em;
 }
+
 /*Styling for Nav bar links*/
 nav a {
 	margin: 30px;
@@ -87,7 +88,7 @@ header p, footer p, main p {
 	margin: 5% 10%;
 }
 
-main, summary, header {
+main, section, header {
 	padding-bottom: 10%;
 }
 
@@ -95,14 +96,14 @@ footer {
 	padding-bottom: 20%;
 }
 
-summary, footer, .linksGallery img {
+section, footer, .linksGallery img {
 	padding-top: 20%;
 }
+
 /* Centering all text content*/
-header div, summary, footer, header p, .gallery {
+header div, section, footer, header p, .gallery {
 	align-content: center;
-	text-align: center;
-	
+	text-align: center;	
 }
 
 /* Styling About Me section - making larger to cover screen space*/
@@ -131,7 +132,7 @@ main img {
 }
 
 /* Styling 'Orange' background items - bunching together*/
-summary, main, .portfolioLink:hover {
+section, main, .portfolioLink:hover {
 	background-color: #C2683D;
 }
 
@@ -148,17 +149,14 @@ footer img:hover {
 /* Make portfolio links transition on hover*/	
 .project1 img:hover, .project6 img:hover {
 	border: 8px solid #3d97c2;
-
 }
 
 .project2 img:hover, .project4 img:hover  {
 	border: 8px solid #c37fd2;
-
 }
 
 .project3 img:hover, .project5 img:hover {
 	border: 8px solid #55C23D;
-
 }
 
 main img:hover {
@@ -186,7 +184,10 @@ main img:hover {
 	span:hover {
 		font-size: 1.5em;	
 	}
-	
+	.gallery {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
 }
 
 @media screen and (max-width: 800px) {	
@@ -199,7 +200,7 @@ main img:hover {
 	nav div {
 		flex-direction: column;
 	}
-	summary, footer, .linksGallery img {
+	section, footer, .linksGallery img {
 			padding-top: 35%;
 		}
 	header img {
@@ -224,7 +225,9 @@ main img:hover {
 	.aboutMeLink:hover, .portfolioLink:hover, .contactLink:hover {
 		padding: 2%;
 	}
-
+	.gallery {
+		grid-template-columns: 1fr;
+	}
 }
 
 
