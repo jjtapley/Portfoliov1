@@ -5,7 +5,7 @@
 body {
 	font-family: 'Kumbh Sans', sans-serif;
 	color: #ffffff;
-	font-size: 1.5em;
+	font-size: 1.3em;
 }
 
 /* Styling for Nav Bar - flexbox and fixed positioning*/
@@ -17,8 +17,6 @@ nav div {
 
 span {
 	color: #000000;
-	text-transform: uppercase;
-	font-size: 1.5rem;
 	font-family: 'Rubik Mono One', sans-serif;
 	transition: all 1s ease;
 }
@@ -26,76 +24,69 @@ span {
 /* Add style change when hovering over name*/
 span:hover {
 	color: #C2683D;
-	font-size: 2em;
 }
 
+/*Fix nav bar to top position on screen*/
 nav {
 	position: fixed;
 	top: 0;
-	background-color: #ffffff;
 	width: 100%;
+	background-color: #ffffff;
+}
+
+/*Grouping multiple matching commands together*/
+nav a, span:hover {
+	font-size: 1.5em;
 }
 
 nav a {
 	margin: 30px;
 	text-decoration: none;
-	font-size: 150%;
 	background-color: #3d97c2;
-	padding: 5%;
+	padding: 10px;
 	border-radius: 8px;
 	transition: padding 1s ease;
-	
 }
 
-
-
 /* All Headers caps and bold */
-nav a, h1, footer{
+nav a, h1, footer span {
 	text-transform: uppercase;
-	font-weight: bold;
 }
 
 /* Change link background cover when hovered over*/
+.aboutMeLink:hover, .portfolioLink:hover, .contactLink:hover {
+	padding: 2%;
+}
+
 .aboutMeLink:hover {
-	padding: 5%;
 	background-color: #c37fd2;
 }
 
-.portfolioLink:hover {
-	padding: 5%;
-	background-color: #C2683D;
-}
-
-.contactLink:hover {
-	padding: 5%;
+.contactLink:hover, footer {
 	background-color: #55C23D;
 }
-/* About Me section*/
+/* About Me section - flower pic sizing*/
 header img {
-	height: 25%;
-	width: 25%;
+	height: 30%;
+	width: 30%;
 	border-radius: 50%;
-	margin-top: 100px;
 }
 
 header h1 {
-	padding-top: 10%;
+	padding-top: 20%;
 }
 
 header div, header img {
 	display: block;
 	margin: 5% auto;
-	width: 100;
 }
 
-
-header p {
-	margin: 5% 20%;
-	text-align: center;
+header p, footer p, main p {
+	margin: 5% 10%;
 }
 
 /* Centering all text content*/
-header div, summary, footer {
+header div, summary, footer, header p, .gallery {
 	align-content: center;
 	text-align: center;
 	
@@ -105,84 +96,71 @@ header div, summary, footer {
 header {
 	background-color: #c37fd2;
 	padding-top: 10%;
-	padding-bottom: 10%;
 }
 /* Creating grid for portfolio images to sit inside*/
 .gallery {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
-	align-content: center;
 }
 
-main {
+main, summary, header {
 	padding-bottom: 10%;
 }
 
 main img {
 	width: 100%;
-	align-items: center;
 	height: 100%;
 	border-radius: 10%;
 	padding: 5px 5px;
-	
 }
-/* Styling Portfolio section*/
-summary, main {
+
+/* Styling Portfolio section and tidying similar commands together*/
+summary, main, .portfolioLink:hover {
 	background-color: #C2683D;
 }
 
-summary, footer {
-	padding-top: 20%;
-	padding-bottom: 100px;
-}
-
 footer {
-	background-color: #55C23D;
 	padding-bottom: 20%;
-	
 }
 /* Aligning and styling links and contact section*/
 .linksGallery {
 	display: flex;
-	flex-shrink: 3;
 }
 
-.linksGallery img {
-	width: 40%;
+/*Adding icon image styling and hover action*/
+footer img {
+	width: 50%;
+	transition: width 1s ease;
+}
+
+footer img:hover {
+	width: 60%;
+}
+
+summary, footer, .linksGallery img {
 	padding-top: 20%;
 }
 
 
 /* Make portfolio links transition on hover*/
 
-.project1 img:hover {
+.project1 img:hover, .project6 img:hover {
 	border: 8px solid #3d97c2;
 }
 
-.project2 img:hover {
+.project2 img:hover, .project4 img:hover  {
 	border: 8px solid #c37fd2;
 }
 
-.project3 img:hover {
+.project3 img:hover, .project5 img:hover {
 	border: 8px solid #55C23D;
-}
-
-.project4 img:hover {
-	border: 8px solid #c37fd2;
-}
-
-.project5 img:hover {
-	border: 8px solid #55C23D;
-}
-
-.project6 img:hover {
-	border: 8px solid #3d97c2;
 }
 
 /*Make responsive */
 
 @media screen and (max-width: 1300px) {
+		
 	span, nav a {
 		font-size: 1em;
 		padding: 5px;
@@ -194,18 +172,27 @@ footer {
 		margin:2%;
 	}
 	.aboutMeLink:hover, .portfolioLink:hover, .contactLink:hover {
-		padding: 2%;
+		padding: 1%;
 	}
-}
 	
+	span:hover {
+		font-size: 1.5em;	
+	}
+	
+}
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {	
 	nav a, span {
 		font-size: 1em;
+		margin-right: 2%;
+	}
+	span:hover {
+		font-size: 1em;	
 	}
 	nav div {
 		height: 60px;
-		justify-content: space-around;
+		display: block;
+		font-size: 0.8em;
 	}
 
 }
@@ -220,11 +207,11 @@ footer {
 	}
 
 }
-/* color scheme:
 
+
+/* color scheme:
 blue: #3d97c2
 pink: #c37fd2
 orange: #C2683D
 green: #55C23D
-
 */
