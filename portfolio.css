@@ -124,6 +124,9 @@ main img {
 	height: 100%;
 	border-radius: 10%;
 	padding: 5px 5px;
+}
+
+.linksGallery {
 	display: flex;
 }
 
@@ -142,7 +145,7 @@ footer img:hover {
 	width: 60%;
 }
 
-/* Make portfolio links transition on hover*/
+/* Make portfolio links transition on hover*/	
 .project1 img:hover, .project6 img:hover {
 	border: 8px solid #3d97c2;
 
