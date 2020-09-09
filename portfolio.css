@@ -23,6 +23,54 @@ span {
 	transition: all 1s ease;
 }
 
+/*Animations for Nav bar and background - page opening*/
+@keyframes animationNav {
+	0% {opacity: 0%; color: #3d97c2; background-color: #55C23D;}
+	25% {opacity: 25%; color: #c37fd2; background-color: #c37fd2;}
+	50% {opacity: 75%; color: #C2683D; background-color: #3d97c2;}
+	75% {opacity: 100%; color: #55C23D; background-color: #C2683D;}
+	100% {opacity: 100%; color: none; background-color: none;}
+}
+
+nav div a {
+	animation-name: animationNav;
+	animation-duration: 4s;
+}
+
+@keyframes animationSpan {
+	0% {opacity: 0%; color: #3d97c2;}
+	25% {opacity: 25%; color: #c37fd2;}
+	50% {opacity: 75%; color: #C2683D;}
+	75% {opacity: 100%; color: #55C23D;}
+	100% {opacity: 100%; color: #3d97c2;}
+}
+
+span {
+	animation-name: animationSpan;
+	animation-duration: 4s;
+}
+
+@keyframes animationSpan {
+	0% {opacity: 0%; color: #3d97c2;}
+	25% {opacity: 25%; color: #c37fd2;}
+	50% {opacity: 75%; color: #C2683D;}
+	75% {opacity: 100%; color: #55C23D;}
+	100% {opacity: 100%; color: none;}
+}
+
+header {
+	animation-name: animationHeader;
+	animation-duration: 4s;
+}
+
+@keyframes animationHeader {
+	0% {background-color: #3d97c2;}
+	25% {background-color: #c37fd2;}
+	50% {background-color:#C2683D;}
+	75% {background-color:#55C23D;}
+	100% {background-color:}
+}
+
 /* Add colour change when hovering over name*/
 span:hover {
 	color: #C2683D;
