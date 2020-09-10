@@ -58,7 +58,7 @@ span {
 	100% {opacity: 100%; color: none;}
 }
 
-header {
+header, select {
 	animation-name: animationHeader;
 	animation-duration: 4s;
 }
@@ -89,7 +89,22 @@ nav a, span:hover {
 	font-size: 1.5em;
 }
 
-/*Styling for Nav bar links*/
+/*Styling for Nav bar links + dropdown on smaller screen*/
+nav select, select option {
+	display: none;
+	font-size: 1em;
+	background-color: #3d97c2;
+	color: #4d1f6e;
+	border: none;
+	border-radius: 8px;
+	margin: auto auto;
+	transition: padding 1s ease;
+}
+
+select:hover {
+	padding: 3%;
+}
+
 nav a {
 	margin: 30px;
 	text-decoration: none;
@@ -100,12 +115,12 @@ nav a {
 }
 
 /* All Headers caps */
-nav a, h1, footer span {
+nav a, h1, footer span, select {
 	text-transform: uppercase;
 }
 
 /* Change link background size when hovered over*/
-.aboutMeLink:hover, .portfolioLink:hover, .contactLink:hover {
+.aboutMeLink:hover, .portfolioLink:hover, .contactLink:hover, nav select, select option {
 	padding: 2%;
 }
 
@@ -117,12 +132,14 @@ nav a, h1, footer span {
 .contactLink:hover, footer {
 	background-color: #55C23D;
 }
+
 /* ABOUT ME HEADER section - flower pic sizing*/
 header img {
 	height: 30%;
 	width: 30%;
 	border-radius: 50%;
 }
+
 /* creating more space around divs to help with positioning*/
 header h1 {
 	padding-top: 20%;
@@ -165,6 +182,10 @@ header {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
+}
+
+section {
+	font-size: 1.3em;
 }
 
 /* Project images styling*/
@@ -212,9 +233,7 @@ main img:hover {
 }
 
 /*Make responsive */
-
-@media screen and (max-width: 1300px) {
-		
+@media screen and (max-width: 1300px) {	
 	span, nav a {
 		font-size: 1em;
 		padding: 5px;
@@ -228,7 +247,6 @@ main img:hover {
 	.aboutMeLink:hover, .portfolioLink:hover, .contactLink:hover {
 		padding: 1%;
 	}
-	
 	span:hover {
 		font-size: 1.5em;	
 	}
@@ -242,42 +260,42 @@ main img:hover {
 	nav a, span {
 		margin-top: 2px;
 	}
-	span:hover {
-		font-size: 1em;	
+	span {
+		font-size: 1.2em;
+		margin-top: 1%;
 	}
-	nav div {
-		flex-direction: column;
+	span:hover {
+		font-size: 1.3em;	
+	}
+	nav a {
+		display: none;
+	}
+	nav {
+		height: 15%;
+	}
+	nav select, select option {
+		display: block;
 	}
 	section, footer, .linksGallery img {
-			padding-top: 35%;
-		}
+		padding-top: 35%;
+	}
 	header img {
 		display: none;
 	}
-	
 	header div {
 		padding-top: 10%;
-		
 	}
 	.aboutMeImage {
 		background-image:url("aboutme.jpg");
 		padding-top: 50%;
 	}
-
 }
 
 @media screen and (max-width: 700px) {
-	nav a, span {
-		font-size: 0.7em;
-	}
-	.aboutMeLink:hover, .portfolioLink:hover, .contactLink:hover {
-		padding: 2%;
-	}
 	.gallery {
 		grid-template-columns: 1fr;
 	}
 }
-
 
 /* color scheme:
 blue: #3d97c2
