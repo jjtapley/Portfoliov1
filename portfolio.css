@@ -167,6 +167,10 @@ header {
 	grid-template-rows: 1fr 1fr;
 }
 
+section {
+	font-size: 1.3em;
+}
+
 /* Project images styling*/
 main img {
 	width: 100%;
