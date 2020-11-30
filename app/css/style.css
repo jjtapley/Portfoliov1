@@ -27,18 +27,30 @@ body {
         font-size: 2.1rem;
         color: #C2683D; }
     body nav a {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       text-transform: uppercase;
       color: #ffffff;
       background-color: #C2683D;
       border-radius: 8%;
-      padding: 1.5rem;
-      transition: padding 0.5s ease-out, font-size 0.5s ease-out; }
+      padding: 1.3rem;
+      transition: padding 0.5s ease-out, font-size 0.5s ease-out;
+    }
+      @media screen and (max-width: 1000px) {
+        body nav a {
+          display: block;
+        }
+    }
       body nav a:hover {
-        padding: 2rem;
-        font-size: 2rem;
+        padding: 1.5rem;
+        font-size: 1.5rem;
         color: white;
-        text-decoration: none; }
+        text-decoration: none;
+      }
+      .collapse li{
+        text-align: center;
+        padding: 1rem;
+        float: right;
+      }
   body header jumbotron {
     padding-bottom: 200px; }
   body header img {
