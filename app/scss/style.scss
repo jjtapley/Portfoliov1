@@ -132,6 +132,11 @@ main {
   .container:hover .middle {
     opacity: 1;
   }
+  @media screen and (min-width: 1400px) {
+    .middle {
+      width: 60%;
+    }
+  }
   @media screen and (max-width: 1200px) {
     .gallery {
       display: grid;
@@ -142,9 +147,7 @@ main {
       height: 400px;
       width: 400px;
     }
-    .middle {
-      width: 60%;
-    }
+
   }
   @media screen and (max-width: 1000px) {
     .gallery {
